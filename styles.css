@@ -1,0 +1,289 @@
+/* Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+/* Header */
+header {
+    background-color: #ECECEC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+/* Logo Container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 0;
+    padding: 10px;
+}
+/* Navigation Bar */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+/* Search Bar Container */
+.search-bar {
+    position: relative;
+    width: 400px;
+    margin-right: 150px;
+}
+/* Search bar input */
+.search-bar input {
+    width: 100%; 
+    padding: 10px 40px ;
+    border-radius: 5px;
+    border: 1px solid #ececec;
+    font-size: 16px;
+}
+/* Icon Inside */
+.search-bar .search-icon {
+    position: absolute; 
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #555;
+    pointer-events: none;
+    background: none; 
+    border: none;
+    padding: 10px;
+}
+/* Category Button */
+.category-container {
+    position: relative;
+}
+.category-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 70px;
+}
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: black;
+    color: white;
+    list-style: none;
+    padding: 10;
+    margin: 0;
+    border-radius: 5px;
+    width: 200px;
+}
+.dropdown-menu li {
+    padding: 5px;
+    border-bottom: 1px solid #ececec;
+}
+.dropdown-menu li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+/* Hover State */
+.dropdown-menu li a:hover {
+    background-color: #333;
+}
+/* Focus State */
+.dropdown-menu li a:focus {
+    background-color: #FF6F61;
+    color: white;
+}
+.category-container:hover .dropdown-menu {
+    display: block;
+}
+/* Cart and Sign-in Button */
+.cart, .sign-in {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;   
+    position: relative;
+}
+.sign-in {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 7px;
+    width:auto;
+    margin-right: 0px;
+}
+/* Cart Icon */
+.cart-icon {
+    font-size: 28px;
+    background: none; 
+    border: none;
+    cursor: pointer;
+    margin-right: 30px;
+
+}
+/* Cart Count */
+.cart-count {
+    background-color: #FF6F61;
+    color: white;
+    padding: 2px 6px; 
+    border-radius: 50%;
+    font-size: 12px;
+    position: absolute;
+    top: -5px; 
+    right: 20px;
+    margin-left: 30px;
+}
+/* Sale Banner */
+.sale-banner {
+    background-color: #F3D250;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #050505;
+}
+.sale-banner p {
+    margin: 0;
+    margin-right: 20px;
+}
+.shop-now {
+    background-color: #F78888;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+/* Main Content */
+main {
+    flex: 1;
+    background-color: rgba(67, 112, 146, 0.5);
+    padding: 20px;
+    text-align: center;
+}
+.top-picks h2 {
+    background-color: #EBB319;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 15px
+}
+.books-container {
+
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    margin-top: 50px
+}
+.book-card {
+    background-color: #ECECEC;
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: left;
+}
+.book-img {
+    width: 100%;
+    height: 180px;
+    border-radius: 0px;
+    margin-bottom: 10px;
+    object-fit: cover; 
+}
+.book-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+.author, .price {
+    margin: 5px 0;
+}
+.price {
+    font-weight: bold;
+}
+.add-to-cart {
+    background-color: #FF6F61;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: auto;
+    float: right;
+}
+/* Footer */
+footer {
+    background-color: #ECECEC;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-top: auto; 
+    width: 100%;
+    box-sizing: border-box;
+}
+/* Social Links */
+.social-links {
+    display: flex;
+    align-items: center;
+}
+.social-links p {
+    margin-right: 10px;
+}
+.social-links a {
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 10px;
+    color: black; 
+}
+/* Footer Links */
+.footer-links {
+    display: flex;
+    justify-content: flex-start;
+    color: black;
+    margin: 0;
+}
+.footer-links a {
+    text-decoration: none;
+    margin-left: 10px;
+    color: black; 
+}
+.footer-links i {
+    margin-right: 2px;
+    color: black;
+}

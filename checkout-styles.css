@@ -1,0 +1,100 @@
+/* Checkout Page Styles */
+.checkout {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #ffffffc3;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+}
+
+/* Heading Style */
+.checkout h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Section Titles (Billing Address, Payment Method, Order Summary) in #FF6F61 */
+.billing-address h3, .payment-method h3, .order-summary h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #FF6F61; /* Set the color to #FF6F61 */
+}
+
+/* Label Style - Make the labels (Full Name, Email, Address, etc.) bold */
+label {
+    font-weight: bold; /* Bold labels */
+    color: #555; /* Set the label text color */
+    margin: 10px 0 5px;
+}
+
+/* Input Fields - Adjusted to be slightly smaller than the checkout container */
+input[type="text"], input[type="email"], input[type="month"], input[type="number"] {
+    width: 100%;
+    max-width: 595px; /* Slightly smaller than 700px checkout container */
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f8f8f8; /* Light background to match the page */
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+/* Button Style - Centered with wider width */
+button.checkout-btn {
+    background-color: #FF6F61;
+    color: white;
+    padding: 18px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    width: 100%;
+    max-width: 595px; /* Button width adjusted to match input fields */
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+/* Order Summary Styles */
+.order-summary ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.order-summary li {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.order-summary p {
+    font-weight: bold;
+    font-size: 20px;
+    color: #FF6F61; /* Set the color to #FF6F61 */
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .checkout {
+        justify-content: space-between;
+        padding: 40px 80px;
+    }
+
+    .billing-address, .payment-method {
+        width: 88%; /* 88% width for side-by-side layout */
+    }
+
+    .order-summary {
+        width: 88%; /* Order summary width to match */
+    }
+}

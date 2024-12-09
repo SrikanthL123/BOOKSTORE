@@ -1,0 +1,127 @@
+/* General Cart Page Styling cartstyles*/
+main {
+    background-color: rgba(67, 112, 146, 0.5); /* #437092 at 50% opacity */
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Cart Items Container */
+.cart-items-container {
+    display: flex; /* Horizontal layout */
+    flex-wrap: wrap; /* Allows wrapping to the next line */
+    gap: 15px; /* Space between book boxes */
+    justify-content: flex-start; /* Align items to the left */
+    padding: 20px;
+    max-width: 1200px; /* Set a maximum width for better control */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Individual Cart Item */
+.cart-item {
+    width: 180px; /* Fixed size for a smaller book box */
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Image on top, text below */
+    align-items: center;
+    text-align: center;
+    flex-grow: 0;
+    margin: 0;
+    box-sizing: border-box; /* Ensure padding is included in the width calculation */
+}
+
+/* Cart Item Image */
+.cart-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Item Info */
+.cart-item .item-info {
+    flex-grow: 1;
+}
+
+.cart-item .item-info h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.cart-item .item-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Cart Total Section */
+.cart-total {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #f3d250; /* Muted yellow */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 60%; /* Ensure it takes full width */
+    margin: 0 auto; /* Center the cart total section */
+}
+
+/* Cart Total Text */
+.cart-total p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Checkout Button */
+.checkout-btn {
+    background-color: #116900;
+    color: white;
+    border: none;
+    padding: 12px 24px; /* Adjusted padding to avoid over-expansion */
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-width: 250px; /* Set a max-width to avoid excessive button size */
+    width: 100%; /* Let it fill the container */
+    margin-top: 10px;
+}
+
+.checkout-btn:hover {
+    background-color: #365873;
+}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .cart-items-container {
+        justify-content: center; /* Center the books on smaller screens */
+    }
+
+    .cart-item {
+        width: 150px; /* Slightly smaller book boxes */
+    }
+
+    .cart-item img {
+        height: 150px; /* Smaller images on small screens */
+    }
+
+    .checkout-btn {
+        width: 100%; /* Ensure button takes full width */
+    }
+}

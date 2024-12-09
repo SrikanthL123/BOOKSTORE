@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BooksBarn</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.jpeg" alt="BooksBarn Logo" class="logo">
+                <h1>BooksBarn</h1>
+            </a>
+        </div>        
+        <nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                   <button class="search-icon">
+                     <i class="fa-solid fa-magnifying-glass"></i>
+                     </button>
+            </div>           
+            <div class="category-container">
+                <button class="category-btn">Categories &#9662;</button>
+                <ul class="dropdown-menu">
+                    <li><a href="category.html">Fiction</a></li>
+                    <li><a href="category.html">Science</a></li>
+                    <li><a href="category.html">History</a></li>
+                    <li><a href="category.html">Thriller</a></li>
+                </ul>
+            </div>
+            <div class="cart">
+                <a href="cart.html">
+                    <button class="cart-icon">&#128722;</button>
+                </a>
+                <span class="cart-count">0</span>
+            </div>
+                <button class="sign-in">Sign-in</button>
+        </nav>
+    </header>
+
+    <section class="sale-banner">
+        <p>SALE 30% off + free delivery...Hurry up!!</p>
+        <button class="shop-now">Shop now</button>
+    </section>
+
+    <main>
+        <div class="top-picks">
+            <h2>Top Picks</h2>
+            <div class="books-container">
+                <div class="book-card">
+                    <img src="images/mountain is u.jpg" alt="Mountain is You" class="book-img">
+                    <p class="book-title">Mountain is You</p>
+                    <p class="author">Briana Heist</p>
+                    <p class="price">$10</p>
+                    <button class="add-to-cart">Add to cart</button>
+                </div>
+                <div class="book-card">
+                    <img src="images/ikigai2.jpg" alt="IKIGAI" class="book-img">
+                    <p class="book-title">IKIGAI</p>
+                    <p class="author">Hector Garcia</p>
+                    <p class="price">$12.50</p>
+                    <button class="add-to-cart">Add to cart</button>
+                </div>
+                <div class="book-card">
+                    <img src="images/Dorian gray Book1.jpg" alt="Dorian Gray" class="book-img">
+                    <p class="book-title">Dorian Gray</p>
+                    <p class="author">Oscar Wilde</p>
+                    <p class="price">$15.50</p>
+                    <button class="add-to-cart">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+    <div class="social-links">
+        <p>Follow us:</p>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <p>Copyright © 2024 . BooksBarn.com . All Rights Reserved</p>
+    <div class="footer-links">
+        <a href="#"><i class="fa-solid fa-location-dot"></i> Find us</a> 
+        <a href="#">Contact us</a>
+    </div>
+</footer>
+<script src="scripts/main.js"></script>
+</body>
+</html>
